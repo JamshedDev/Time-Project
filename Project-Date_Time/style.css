@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(59, 65, 71);
+    color: white;
+}
+
+.clock-container{
+    text-align: center;
+    font-size: 60px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 120px 150px;
+    background-color: rgb(230, 87, 40);
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.clock-container:hover{
+    color: rgb(250, 195, 55);
+    background-color: navy;
+    font-family: cursive;
+}

@@ -1,0 +1,12 @@
+let str=" Jamshed Akhtar "
+console.log(str.length)
+console.log(str.toUpperCase())
+console.log(str.includes("l"))
+console.log(str.indexOf("s"))
+console.log(str.length)
+console.log(str.trim().length)
+console.log(str.substring(1,5))
+console.log(str.slice(1,5))
+console.log(str.replace("Jamshed","Khan"))
+console.log(str.split(" "))
+console.log(str.charAt(7))
