@@ -47,6 +47,7 @@ footer{
     display: flex;
     margin: auto;
     margin-top: 30px;
+    width: 60%;
     padding: 10px 10px;
     background-color: whitesmoke;
     color: navy;
@@ -66,7 +67,7 @@ p{
     margin: auto;
     margin-top: 30px;
     padding: 10px 10px;
-    width: 30%;
+    width: 40%;
     background-color: navy;
     color: whitesmoke;
     border: 3px solid white;
