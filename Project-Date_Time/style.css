@@ -14,7 +14,7 @@ body {
   text-align: center;
   margin: 30px auto;
   width: 90%;
-  max-width: 600px;
+  max-width: 100%;
   border: 2px dotted whitesmoke;
   border-radius: 25px;
   padding: 60px 20px;
@@ -37,20 +37,12 @@ body {
 }
 
 /* Hover effect */
-.clock-container:hover {
+.clock-container:hover,.greet:hover,
+p.heading:hover {
   background-color: crimson;
   color: lemonchiffon;
-  box-shadow: 0px 0px 50px hotpink;
+  box-shadow: 0px 0px 40px hotpink;
   border: 3px solid lemonchiffon;
-}
-
-/* Footer */
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 /* Greeting text */
@@ -58,8 +50,8 @@ footer {
   display: flex;
   margin: auto;
   margin-top: 20px;
-  width: 80%;
-  max-width: 500px;
+  width: 100%;
+  max-width: 100%;
   padding: 10px 15px;
   background-color: whitesmoke;
   color: navy;
@@ -71,12 +63,6 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 
-.greet:hover {
-  background-color: navy;
-  color: whitesmoke;
-  border: 4px solid whitesmoke;
-}
-
 /* Heading */
 p.heading {
   display: flex;
@@ -85,7 +71,7 @@ p.heading {
   margin: 30px auto 10px;
   padding: 10px;
   width: 80%;
-  max-width: 400px;
+  max-width: 700px;
   background-color: navy;
   color: whitesmoke;
   border: 3px solid white;
@@ -108,47 +94,52 @@ p.heading {
   }
 
   p.heading {
-    font-size: 1rem;
+    width: 100%;
+    font-size: 1.3rem;
   }
 
   .greet {
-    font-size: 0.9rem;
+    width: 100%;
+    font-size: 1.5rem;
+    color: red;
   }
 }
 
 /* Mobile phones */
 @media (max-width: 480px) {
-  .clock {
-    font-size: 1.7rem;
-  }
-
-  .clock-container {
-    padding: 40px 15px;
-    border-radius: 20px;
-  }
-
-  p.heading {
-    width: 90%;
-    font-size: 0.9rem;
-  }
-
-  .greet {
-    width: 90%;
-    font-size: 0.85rem;
-    border-radius: 40px;
-  }
+    .clock {
+        font-size: 1.7rem;
+    }
+    
+    .clock-container {
+        padding: 40px 15px;
+        border-radius: 20px;
+    }
+    
+    p.heading {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    
+    .greet {
+        width: 100%;
+        font-size: 1.3rem;
+    }
 }
-
 
 /* For large desktops (1200px and above) */
 @media (min-width: 1200px) {
-  .clock-container {
-    width: 80%;
-    height: auto;
-  }
-  .clock{
-    font-size: 80px
-  }
+    .clock-container {
+        width: 80%;
+        height: auto;
+    }
+    .clock {
+        font-size: 80px;
+    }
+    .greet {
+        width: 100%;
+        font-size: 1.5rem;
+    }
 }
 
 /* For tablets (768px–1199px) */
@@ -157,18 +148,50 @@ p.heading {
         width: 80%;
         height: auto;
     }
-    .clock{
-      font-size: 50px
+    .clock {
+        width: 100%;
+        font-size: 90px;
+    }
+    .greet {
+        width: 100%;
+        font-size: 2rem;
+    }
+    p.heading {
+        width: 100%;
+        font-size: 2.1rem;
     }
 }
 
 /* For mobile devices (below 768px) */
 @media (max-width: 767px) {
+  .clock-container {
+    width: 85%;
+    height: auto;
+  }
+  .clock {
+    font-size: 65px;
+  }
+  p.heading {
+        width: 100%;
+        font-size: 1.9rem;
+    }
+}
+
+@media (min-width:1199px){
     .clock-container {
         width: 85%;
         height: auto;
     }
-    .clock{
-      font-size: 30px
+    .clock {
+        width: 90%;
+        font-size: 110px;
+    }
+    .greet {
+        width: 100%;
+        font-size: 2.1rem;
+    }
+    p.heading {
+        width: 100%;
+        font-size: 2.5rem;
     }
 }
